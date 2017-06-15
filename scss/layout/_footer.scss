@@ -1,0 +1,44 @@
+
+#main-footer {
+	border-top: 1px solid #fff;
+	width: 100%;
+	display: inline-block;
+	@media #{$brk-narrow} {
+		float: right;
+	}
+}
+
+#footer-home, #footer-portfolio, #footer-goals, #footer-contact {
+	display: none;
+	@media #{$brk-narrow} {
+		@include text($weight: bold);
+		text-transform: uppercase;
+		display: inline-block;
+		margin-right: 21px;
+		margin-left: 5px;
+		font-family: #{$main-font};
+	}
+}
+
+#name {
+	@include text($weight: bold);
+	float: left;
+	margin: 15px 5px 15px -16px;
+}
+
+#back-to-top {
+	@extend %uppercase;
+	float: right;
+	margin: 20px 21px 15px 5px;
+	font-family: #{$font-secondary};
+	@media #{$brk-narrow} {
+		display: none;
+	}
+}
+
+#list-items {
+	@media #{$brk-narrow} {
+		float: right;
+		margin-top: 15px;
+	}
+}

@@ -1,0 +1,25 @@
+
+.about-section {
+
+	img {
+		max-width: 70%;
+		margin-top: 10px;
+		margin-bottom: 15px;
+		@media #{$brk-narrow} {
+			float: right;
+			max-width: 40%;
+			margin: 10px 5%;
+		}
+	}
+
+	p {
+		padding: 0 20px 15px;
+		@media #{$brk-narrow} {
+			text-align: left;
+			margin-left: 30px;
+		}
+		@media #{$brk-wide} {
+			max-width: 60%;
+		}
+	}
+}

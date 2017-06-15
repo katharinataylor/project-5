@@ -1,0 +1,19 @@
+
+.contact-info {
+
+	p {
+		padding: 0 15px;
+		@media #{$brk-narrow} {
+			margin: 1px 50px 30px;
+		}
+	}
+}
+
+.contact-details {
+	padding-bottom: 50px;
+	margin-left: -40px;
+
+	a {
+		color: $links;
+	}
+}

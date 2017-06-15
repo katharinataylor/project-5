@@ -1,0 +1,38 @@
+
+.main-nav {
+	@media #{$brk-wide} {
+		text-align: right;
+		width: 100%;
+	}
+
+	li {
+		@include text($weight: bold);
+		margin: 5px 24px 5px -16px;
+		font-family: #{$font-secondary};
+	}
+
+	.name {
+		@include text($size: 3em);
+		padding: 25px 0;
+		text-align: center;
+		@media #{$brk-wide} {
+			float: left;
+			padding-left: 25px;
+		}
+	}
+
+	.navigation {
+		@extend %uppercase;
+		@include text($size: 1.1em);
+		padding-bottom: 15px;
+		@media #{$brk-narrow} {
+			display: inline-block;
+		}
+		@media #{$brk-wide} {
+			padding-top: 50px;
+			padding-right: 3%;
+			display: inline-block;
+			margin-top: 12px;
+		}
+	}
+}
